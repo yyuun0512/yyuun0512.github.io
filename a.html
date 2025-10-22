@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MY PORCELIAN</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+@font-face {
+    src: url("fonts/suitregular.otf");
+    font-family: "suitregular.otf";
+    font-display: block;
+}
+
+html, body {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      font-family: "suitregular.otf";
+      overflow: hidden;
+    }
+
+    /* 전체 컨테이너 */
+.wrapper {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 2000px;
+      height: 1200px;
+      transform-origin: center center;
+      transform: translate(-50%, -50%) scale(var(--scale));
+      background-color: #fff;
+    }
+
+    /* ===== 헤더 ===== */
+header {
+      width: 100%;
+      height: 160px;
+      display: flex;
+      align-items: center;
+      padding: 0 160px;
+      background-color: #fff;
+      justify-content: flex-start;
+    }
+
+.logo {
+      width: 320px; /* ✅ 폭 살짝 넓힘 */
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    /* ✅ 로고 텍스트 (한 줄 고정 + 폰트 줄임) */
+ .logo h1 {
+      font-family:"suitregular.otf";
+      font-size: 29px; /* ✅ 38 → 28로 줄임 */
+      font-weight: 200;
+      letter-spacing: 0.08em;
+      margin: 0;
+      white-space: nowrap; /* ✅ 줄바꿈 방지 */
+      display: inline-block; /* ✅ 한 덩어리로 처리 */
+    }
+
+    /* 메뉴 */
+nav {
+      display: flex;
+      align-items: center;
+      margin-left: 280px;
+      gap: 120px;
+    }
+
+nav a {
+      font-family: "suitregular.otf";
+      font-size: 24px;
+      text-decoration: none;
+      color: #333;
+      letter-spacing: 0.05em;
+      font-weight: 200;
+      white-space: nowrap;
+      transition: opacity 0.2s ease;
+    }
+
+nav a:hover { opacity: 0.6; }
+main{
+      width:100%;
+      min-height:calc(100% - 320px);
+      padding-bottom:160px;
+    }
+ section{margin-bottom:120px;}
+
+
+/* 타이틀 위치: intro와 동일 */
+.iihoshiyumiko-title{
+  font-size:29px;
+  font-weight:200;
+  letter-spacing:0.06em;
+  color:#000;
+  margin-left:160px;
+  margin-top:60px;
+  margin-bottom:80px;
+}
+
+.Mainproduct{
+  font-size:29px;
+  font-weight:200;
+  letter-spacing:0.06em;
+  color:#000;
+  margin-left:160px;
+  margin-top:60px;
+  margin-bottom:80px;
+
+}
+
+.Recommendation{
+  font-size:29px;
+  font-weight:200;
+  letter-spacing:0.06em;
+  color:#000;
+  margin-left:160px;
+  margin-top:60px;
+  margin-bottom:80px;
+  
+}
+
+<body>
+<header>
+    <div class="logo"><a href="main.html"><h1>MY PORCELIAN</h1></a></div>
+    <nav>
+      <a href="intro.html">INTRO</a>
+      <a href="collection.html">COLLECTION</a>
+      <a href="a.html">BRANDS</a>
+      <a href="#">WISH-LIST</a>
+      <a href="#">SHOP</a>
+    </nav>
+  </header>
+
+<main>
+    <div class=".iihoshiyumiko-title">Iihoshi Yumiko</div>
+
+    <div class=".Mainproduct">Main Product
+

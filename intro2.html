@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY PORCELIAN – INTRO</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      @font-face {
+        font-family: 'suitregular.otf';
+        src: url('fonts/suitregular.otf');
+        font-display: block;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        font-family: 'suitregular.otf';
+        /* overflow: auto; */
+      }
+
+      .wrapper {
+        position: relative;
+        /* top: 50%;
+        left: 50%; */
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        transform: translate(-50%, -50%) scale(var(--scale));
+        transform-origin: center center;
+        background-color: #fff;
+      }
+
+      header {
+        width: 100%;
+        height: 160px;
+        display: flex;
+        align-items: center;
+        padding: 0 160px;
+        background-color: #fff;
+        z-index: 10;
+        justify-content: flex-start;
+        position: fixed;
+      }
+
+      .logo {
+        width: 320px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .logo a {
+        text-decoration: none;
+        color: inherit;
+        display: inline-block;
+      }
+
+      .logo h1 {
+        font-family: 'suitregular.otf';
+        font-size: 29px;
+        font-weight: 200;
+        letter-spacing: 0.08em;
+        margin: 0;
+        white-space: nowrap;
+        display: inline-block;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        margin-left: 280px;
+        gap: 120px;
+      }
+
+      nav a {
+        font-family: 'suitregular.otf';
+        font-size: 24px;
+        text-decoration: none;
+        color: #333;
+        letter-spacing: 0.05em;
+        font-weight: 200;
+        white-space: nowrap;
+        transition: opacity 0.2s ease;
+      }
+
+      nav a:hover {
+        opacity: 0.6;
+      }
+
+      main {
+        width: 100%;
+        height: 880px;
+        background-color: #fff;
+      }
+
+      .intro-title {
+        font-size: 29px;
+        font-weight: 200;
+        letter-spacing: 0.06em;
+        color: #333;
+        margin-left: 160px;
+        margin-top: 60px;
+        margin-bottom: 80px;
+      }
+
+      .intro-text {
+        position: relative;
+        left: 320px;
+        width: 70%;
+        height: 480px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 20px;
+        line-height: 1.8;
+        color: #333;
+        letter-spacing: 0.02em;
+        transform: translateX(430px);
+      }
+
+      .intro-text p {
+        margin-bottom: 25px;
+      }
+
+      footer {
+        width: 100%;
+        height: 160px;
+        display: flex;
+        align-items: center;
+        padding-left: 160px;
+        background-color: #f5f5f5;
+        font-size: 14px;
+        color: #333;
+        font-family: 'suitregular.otf';
+        font-weight: 200;
+        letter-spacing: 0.05em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="logo">
+          <a href="index.html"><h1>MY PORCELIAN</h1></a>
+        </div>
+        <nav>
+          <a href="intro2.html">INTRO</a>
+          <a href="collection2.html">COLLECTION</a>
+          <a href="e.html">BRANDS</a>
+          <a href="wishlist.html">WISH-LIST</a>
+          <a href="shop01.html">SHOP</a>
+        </nav>
+      </header>
+
+      <main>
+        <div class="intro-title">INTRO</div>
+        <div class="intro-text">
+          <p>
+            안녕하세요. 계원예술대학교 디지털미디어디자인 22565053 조윤정입니다.
+          </p>
+          <p>저의 웹페이지 ‘MY PORCELIAN’에 방문해주셔서 감사합니다.</p>
+          <p>
+            저는 평소 그릇에 관심이 많아 저의 취향에 맞는 그릇들을 엄마와 함께
+            하나하나 모으고 있습니다.
+          </p>
+          <p>모으다 보니 저도 모르게 저만의 취향이 생긴 것을 깨달았습니다.</p>
+          <p>
+            이에 이번 중간 프로젝트에서는 제가 소장하고 있는 그릇들과 관련
+            브랜드를 소개하며, 단순한 상품 추천이 아니라 제가 평소 가지고 싶었던
+          </p>
+          <p>
+            그릇들을 추천 이유와 함께 관련 판매점을 알려드리는 웹페이지를
+            제작하고자 합니다.
+          </p>
+          <p>
+            사이트의 메뉴들을 하나씩 둘러보게 되면 서서히 저의 취향과 그릇의
+            매력을 느낄 수 있다고 생각합니다.
+          </p>
+          <p>
+            평소 그릇과 식기에 관심이 없는 분들도 이번 기회에 도자기와 한 발짝
+            가까워질 수 있으면 좋겠습니다.
+          </p>
+          <p>감사합니다.</p>
+        </div>
+      </main>
+
+      <footer>Copyright © 조윤정 All Rights Reserved.</footer>
+    </div>
+
+    <script>
+      // function resize() {
+      //   const baseWidth = 2000;
+      //   const baseHeight = 1200;
+      //   const scale = window.innerWidth / baseWidth;
+      //   document.documentElement.style.setProperty("--scale", scale);
+      // }
+      // window.addEventListener("resize", resize);
+      // resize();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY PORCELIAN – SHOP</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      @font-face {
+        src: url('fonts/suitregular.otf');
+        font-family: 'suitregular.otf';
+        font-display: block;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        font-family: 'suitregular.otf';
+        /* overflow: hidden; */
+      }
+
+      .wrapper {
+        /* position: fixed; */
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: auto;
+        transform: translate(-50%, -50%) scale(var(--scale));
+        transform-origin: center center;
+        background-color: #fff;
+      }
+
+      /* ===== 헤더 ===== */
+      header {
+        width: 100%;
+        height: 160px;
+        display: flex;
+        align-items: center;
+        padding: 0 160px;
+        background-color: #fff;
+        justify-content: flex-start;
+        position: fixed;
+        z-index: 10;
+      }
+
+      .logo {
+        width: 320px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .logo h1 {
+        font-family: 'suitregular.otf';
+        font-size: 29px;
+        font-weight: 200;
+        letter-spacing: 0.08em;
+        margin: 0;
+        white-space: nowrap;
+        display: inline-block;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        margin-left: 280px;
+        gap: 120px;
+      }
+
+      nav a {
+        font-family: 'suitregular.otf';
+        font-size: 24px;
+        text-decoration: none;
+        color: #333;
+        letter-spacing: 0.05em;
+        font-weight: 200;
+        white-space: nowrap;
+        transition: opacity 0.2s ease;
+      }
+
+      nav a:hover {
+        opacity: 0.6;
+      }
+
+      main {
+        width: 100%;
+        height: 880px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .shop-title {
+        font-size: 29px;
+        font-weight: 200;
+        letter-spacing: 0.06em;
+        color: #000;
+        margin-left: 160px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+      }
+
+      .shop-table {
+        width: 1680px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1.2fr 2fr 2fr 1fr 1fr;
+        gap: 8px;
+        font-size: 17px;
+        font-weight: 200;
+        letter-spacing: 0.03em;
+        color: #333;
+      }
+
+      .shop-table div {
+        padding: 10px 16px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .shop-header {
+        font-weight: bold;
+        border-bottom: 2px solid #000;
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 160px;
+        display: flex;
+        align-items: center;
+        padding-left: 160px;
+        background-color: #f5f5f5;
+        font-size: 14px;
+        color: #333;
+        font-weight: 200;
+        letter-spacing: 0.05em;
+        z-index: 10;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="logo">
+          <a href="index.html"><h1>MY PORCELIAN</h1></a>
+        </div>
+        <nav>
+          <a href="intro2.html">INTRO</a>
+          <a href="collection2.html">COLLECTION</a>
+          <a href="e.html">BRANDS</a>
+          <a href="wishlist.html">WISH-LIST</a>
+          <a href="shop01.html">SHOP</a>
+        </nav>
+      </header>
+
+      <main>
+        <div class="shop-title">SHOP</div>
+
+        <div class="shop-table">
+          <div class="shop-header">SHOP</div>
+          <div class="shop-header">도로명</div>
+          <div class="shop-header">지번</div>
+          <div class="shop-header">운영시간</div>
+          <div class="shop-header">문의전화</div>
+
+          <div>VBC CASA 신세계 백화점 강남점</div>
+          <div>서울 서초구 신반포로 176 센트럴시티</div>
+          <div>서울 서초구 반포동 19-3</div>
+          <div>10:30 – 20:00<br />연중무휴</div>
+          <div>02-3479-1337</div>
+
+          <div>Villeory & Boch 신세계 백화점 강남점</div>
+          <div>서울 서초구 신반포로 176 센트럴시티</div>
+          <div>서울 서초구 반포동 19-3</div>
+          <div>10:30 – 20:00<br />연중무휴</div>
+          <div>02-3479-6008</div>
+
+          <div>키친툴 신세계 백화점 강남점</div>
+          <div>서울 서초구 신반포로 176 센트럴시티</div>
+          <div>서울 서초구 반포동 19-3</div>
+          <div>10:30 – 20:00<br />연중무휴</div>
+          <div>02-3479-1524</div>
+
+          <div>Iihoshi Yumiko 다이칸야마점</div>
+          <div>도쿄도 시부야구 다이칸야마초 6-6</div>
+          <div>다이칸야마 SPT BLDG.1-Ar</div>
+          <div>11:00 – 18:00<br />화,수 정기휴뮤</div>
+          <div>02-3479-1524</div>
+        </div>
+      </main>
+
+      <footer>Copyright © 조윤정 All Rights Reserved.</footer>
+    </div>
+
+    <script>
+      // function resize() {
+      //   const baseWidth = 2000;
+      //   const baseHeight = 1200;
+      //   const scale = window.innerWidth / baseWidth;
+      //   document.documentElement.style.setProperty('--scale', scale);
+      // }
+      // window.addEventListener('resize', resize);
+      // resize();
+    </script>
+  </body>
+</html>

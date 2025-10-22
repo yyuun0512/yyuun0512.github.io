@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MY PORCELIAN – Iihoshi Yumiko</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    @font-face {
+      src: url("fonts/suitregular.otf");
+      font-family: "suitregular.otf";
+      font-display: block;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      font-family: "suitregular.otf";
+      overflow: hidden; /* ✅ collection과 동일 */
+    }
+
+    /* ===== 전체 컨테이너 ===== */
+    .wrapper {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 2000px;
+      height: 1200px;
+      transform-origin: center center;
+      transform: translate(-50%, -50%) scale(var(--scale));
+      background-color: #fff;
+      overflow-y: auto;
+    }
+
+    /* ===== 헤더 ===== */
+    header {
+      width: 100%;
+      height: 160px;
+      display: flex;
+      align-items: center;
+      padding: 0 160px;
+      background-color: #fff;
+      justify-content: flex-start;
+    }
+
+    .logo {
+      width: 320px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .logo h1 {
+      font-size: 29px;
+      font-weight: 200;
+      letter-spacing: 0.08em;
+      margin: 0;
+      white-space: nowrap;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      margin-left: 280px;
+      gap: 120px;
+    }
+
+    nav a {
+      font-size: 24px;
+      text-decoration: none;
+      color: #333;
+      letter-spacing: 0.05em;
+      font-weight: 200;
+      transition: opacity 0.2s ease;
+    }
+
+    nav a:hover { opacity: 0.6; }
+
+    /* ===== 메인 ===== */
+    main {
+      width: 100%;
+      min-height: calc(100% - 320px);
+      padding-bottom: 160px;
+      background: #fff;
+    }
+
+    .title {
+      font-size: 29px;
+      font-weight: 200;
+      letter-spacing: 0.06em;
+      color: #000;
+      margin-left: 160px;
+      margin-top: 60px;
+      margin-bottom: 80px;
+    }
+
+    .brand-desc {
+      position: relative;      
+      left: 320px;           
+      width: 70%;
+      height: 480px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      font-size: 20px;
+      line-height: 1.8;
+      color: #333;
+      letter-spacing: 0.02em;
+      transform: translateX(430px); 
+    }
+    
+
+    /* ===== 이미지 ===== */
+    .main-product-img {
+      width: 1280px;
+      height: 460px;
+      margin-left: 600px;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 4px;
+    }
+
+    .main-product-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ===== 추천 섹션 ===== */
+    .recommend-wrap {
+      width: 1280px;
+      margin-left: 600px;
+      margin-bottom: 100px;
+      justify-content: space-between;
+    }
+
+    .recommend-grid {
+      display: flex;
+      gap: 40px;
+    }
+
+    .recommend-item {
+      flex: 1 1 0;
+      min-width: 0;
+    }
+
+    .recommend-img {
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+
+    .recommend-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .product-name {
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 1.4;
+      margin-bottom: 8px;
+      letter-spacing: 0.03em;
+    }
+
+    .recommend-desc {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #333;
+      font-weight: 200;
+    }
+
+    /* ===== 푸터 ===== */
+    footer {
+      width: 100%;
+      height: 160px;
+      display: flex;
+      align-items: center;
+      padding-left: 160px;
+      background-color: #f5f5f5;
+      font-size: 14px;
+      color: #333;
+      font-weight: 200;
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="logo"><a href="main.html"><h1>MY PORCELIAN</h1></a></div>
+      <nav>
+        <a href="intro2.html">INTRO</a>
+        <a href="collection2.html">COLLECTION</a>
+        <a href="#">BRANDS</a>
+        <a href="#">WISH-LIST</a>
+        <a href="#">SHOP</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="title">Iihoshi Yumiko</div>
+      <div class="brand-desc">
+        <p>도예가 이이호시 유미코가 디자인과 프로듀스를 다루는 일본 식기 브랜드, 2007년부터 </p>
+        <p>'작품과 제품 경계에 있는 것'을 컨셉으로 공장에서 대량 생산되지만 따뜻한 식기를 </p>
+        <p>작가의 의도와 손맛이 담겨져 있어 제품마다 유약의 흐름, 굽의 형태, 색감이 조금씩 다릅니다.</p>
+        <P>이것이 이 브랜드의 차별점으로 제가 이 브랜드를 좋아하기도 한 이유입니다. </P>
+      </div>
+
+      <div class="title">MAIN PRODUCT</div>
+      <div class="main-product-img"><img src="pattern01.jpg" alt="Pattern" /></div>
+      <div class="main-product-img"><img src="bonvoyage.jpg" alt="Bon Voyage" /></div>
+      <div class="main-product-img"><img src="slide.jpg" alt="Relabo" /></div>
+
+      <div class="title">RECOMMENDATION</div>
+      <div class="recommend-wrap">
+        <div class="recommend-grid">
+          <div class="recommend-item">
+            <div class="recommend-img"><img src="reirabocup.jpg" alt="RelRABO 컵 S" /></div>
+            <div class="product-name">Iihoshi Yumiko<br>RelRABO Cup S</div>
+            <div class="recommend-desc">컵 표면의 균일하지 않은 유약이 볼거리이다.</div>
+          </div>
+
+          <div class="recommend-item">
+            <div class="recommend-img"><img src="ovalplate.jpg" alt="오벌 플레이트 S" /></div>
+            <div class="product-name">Iihoshi Yumiko<br>Oval Plate S</div>
+            <div class="recommend-desc">타원형인데 직선적인 느낌이 들어 디자인적 재미가 있는 그릇이다.</div>
+          </div>
+
+          <div class="recommend-item">
+            <div class="recommend-img"><img src="aluminumtraysquare.jpg" alt="컬러 릴라메노 트레이 L" /></div>
+            <div class="product-name">Iihoshi Yumiko<br>‘Colored’ aluminum tray L</div>
+            <div class="recommend-desc">은은한 색감과 알루미늄의 재질의 가벼움으로 사용하기 편리하다.</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      Copyright © 조윤정 All Rights Reserved.
+    </footer>
+  </div>
+
+  <script>
+    function resize() {
+      const baseWidth = 2000;
+      const baseHeight = 1200;
+      const scaleW = window.innerWidth / baseWidth;
+      const scaleH = window.innerHeight / baseHeight;
+      const scale = Math.min(scaleW, scaleH); 
+      document.documentElement.style.setProperty("--scale", scale);
+    }
+    window.addEventListener("resize", resize);
+    resize();
+  </script>
+</body>
+</html>
